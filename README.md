@@ -1,3 +1,3 @@
 # Bingo.activity
 
-![Bingo](https://ibb.co/mvmP9b)
+![Bingo](http://i68.tinypic.com/33vgmtw.png)
