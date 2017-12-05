@@ -245,6 +245,10 @@ function checkNumber(clicked_id){
 			if (winList[n] == 11111){
 				document.getElementById("text").innerHTML = "BINGO! You used " + numberOfClicks + " moves";
 				document.getElementById("overlay").style.display = "block";
+				for (var g = 1; g <= 25; g++){
+					document.getElementById("button"+g).value = 0;
+				}
+				numberOfClicks = 0;
 			}
 		}
 	}
