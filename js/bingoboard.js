@@ -85,7 +85,6 @@ var newTimer = 5;
 function restart() {
 	var newTimer = 5;
 	restartCount++;
-	alert(restartCount);
 	boardNumbers =[];
 	getNumber = [];
 
