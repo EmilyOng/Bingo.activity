@@ -51,8 +51,16 @@ function boardColors(xocolor){
 	}
 	clickColor = xocolor.stroke;
 	fillColor = xocolor.fill;
-	if (clickColor == fillColor){
-		clickColor = "black";
+}
+
+function sugarOrNot(){
+	if (fillColor === undefined) {
+		fillColor = '#ff0000';
+		clickColor = '#00ff00';
+			for (var i = 1; i <= 25; i++){
+			document.getElementById("button"+i).innerHTML = get_rand(boardNumbers);
+			document.getElementById("button"+i).style.backgroundColor = fillColor;
+		}
 	}
 }
 
@@ -84,7 +92,6 @@ function bingoNumber(){
 startTimer();
 bingoNumber();
 
-var newTimer = 5;
 
 function restart() {
 	var newTimer = 5;
