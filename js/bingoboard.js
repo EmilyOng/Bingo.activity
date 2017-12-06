@@ -51,6 +51,9 @@ function boardColors(xocolor){
 	}
 	clickColor = xocolor.stroke;
 	fillColor = xocolor.fill;
+	if (clickColor == fillColor){
+		clickColor = "black";
+	}
 }
 
 var countdowntimer = 5;
@@ -82,6 +85,7 @@ startTimer();
 bingoNumber();
 
 var newTimer = 5;
+
 function restart() {
 	var newTimer = 5;
 	restartCount++;
